@@ -168,7 +168,7 @@ button {
     transition: 0.5s;
 }
 
-button:hover{
+button:hover {
     background: #0a104e;
 }
 
@@ -210,7 +210,7 @@ button:hover{
     height: 1px;
     background-color: #fff;
 }
-  
+
 .text {
     padding: 0 10px;
 }
@@ -241,4 +241,179 @@ button:hover{
 
 .social-acc-logo a:hover i {
     color: #fff;
+}
+
+
+.remember-me{
+    display: flex;
+    gap: 5px;
+   
+
+}
+
+
+/* Responsiveness */
+
+/*Tablets and small laptops */
+@media screen and (max-width: 768px) {
+    .form {
+        width: 380px;
+        max-width: calc(100% - 40px);
+        padding: 35px 30px;
+    }
+
+    .input-field input {
+        width: 100%;
+    }
+
+    .github {
+        top: 15px;
+        right: 20px;
+        font-size: 45px;
+    }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 70px 16px 24px;
+    }
+}
+
+.form {
+    width: 100%;
+    max-width: 360px;
+    height: 500px;
+    padding: 30px 24px;
+    border-radius: 24px;
+}
+
+.form-body form {
+    width: 100%;
+}
+
+h2 {
+    font-size: 26px;
+    letter-spacing: 4px;
+}
+
+.input-field {
+    margin: 26px 0;
+}
+
+.input-field input {
+    width: 100%;
+    height: 38px;
+    font-size: 14px;
+}
+
+.input-field label {
+    font-size: 14px;
+}
+
+.input-field input:focus~label,
+.input-field input:valid~label {
+    font-size: 12px;
+}
+
+.input-field i {
+    font-size: 16px;
+}
+
+.remember-me {
+    margin: 5px 0 15px 2px;
+}
+
+.remember-me label {
+    font-size: 12px;
+}
+
+.forgot-pass {
+    margin: -35px 0 20px 0;
+    text-align: right;
+    font-size: 12px;
+}
+
+button {
+    height: 42px;
+    font-size: 14px;
+}
+
+.signUp-connect {
+    font-size: 12px;
+    margin: 14px 0;
+}
+
+.social-acc {
+    font-size: 12px;
+}
+
+.seperator {
+    padding: 0 10px;
+}
+
+.social-acc-logo a {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    margin: 16px 4px 0;
+}
+
+.social-acc-logo a i {
+    font-size: 13px;
+}
+
+.github {
+    top: 12px;
+    right: 16px;
+    font-size: 38px;
+}
+
+
+/* Extra-small mobile devices */
+@media screen and (max-width: 350px) {
+    .form {
+        padding: 26px 18px;
+        height: 490px;
+    }
+
+    h2 {
+        font-size: 23px;
+        letter-spacing: 3px;
+    }
+
+    .input-field {
+        margin: 23px 0;
+    }
+
+    .remember-me label,
+    .signUp-connect {
+        font-size: 11px;
+    }
+
+    .forgot-pass {
+        font-size: 11px;
+    }
+
+    .seperator {
+        padding: 0 4px;
+    }
+
+    .social-acc-logo a {
+        margin: 14px 3px 0;
+    }
+}
+
+/* Short screens / landscape phones */
+@media screen and (max-height: 550px) {
+    body {
+        min-height: 100vh;
+        padding-top: 60px;
+        padding-bottom: 20px;
+        align-items: flex-start;
+    }
+
+    .form {
+        flex-shrink: 0;
+    }
 }
